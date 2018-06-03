@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <anotherdialog.h>
+#include "glview.h"
 
 namespace Ui {
 class MainWindow;
@@ -29,6 +30,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     AnotherDialog *newDialog;
+    GLView glView;
 };
 
 #endif // MAINWINDOW_H

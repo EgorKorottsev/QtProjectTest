@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui opengl
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -26,11 +26,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    anotherdialog.cpp
+    anotherdialog.cpp \
+    glview.cpp
 
 HEADERS += \
         mainwindow.h \
-    anotherdialog.h
+    anotherdialog.h \
+    glview.h
 
 FORMS += \
         mainwindow.ui \
@@ -38,3 +40,5 @@ FORMS += \
 
 RESOURCES += \
     recources.qrc
+
+LIBS += -lopengl32

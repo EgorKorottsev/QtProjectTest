@@ -10,6 +10,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     newDialog = new AnotherDialog();
     qApp->installEventFilter(this); //перехват событий главного окна
+    glView.show();
 
 }
 
